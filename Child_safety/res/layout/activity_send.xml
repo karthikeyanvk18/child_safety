@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp"
+        android:text="CHILD SAFETY"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#9C2A05" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TextView01"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="Notification Send"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="50dp"
+        android:layout_height="100dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/TextView01"
+        android:src="@drawable/child" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView1"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_alignTop="@+id/imageView1"
+        android:layout_marginTop="14dp"
+        android:text="Location"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>

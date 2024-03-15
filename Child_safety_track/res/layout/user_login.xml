@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+      android:background="@drawable/l1"  >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:text="Parent Login"
+android:textColor="#2D2049"
+        android:textSize="40sp" />
+
+    <EditText
+        android:id="@+id/u_name"
+        android:layout_width="250dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:background="@layout/rounded_border_edittext"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Mobile No" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="250dp"
+        android:layout_height="55dp"
+        android:layout_alignLeft="@+id/u_name"
+        android:layout_below="@+id/u_name"
+        android:layout_marginTop="20dp"
+        android:background="@layout/rounded_border_edittext"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_alignLeft="@+id/pass"
+        android:layout_below="@+id/pass"
+        android:layout_marginTop="15dp"
+        android:background="@layout/rounded_border_editbtn"
+        android:text="Sign in"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:text="Register Here..."
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    </RelativeLayout>
+ 
